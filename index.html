@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Introduction to web developement using Angular 2.0</title>
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<!-- Printing and PDF exports -->
+	<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2> Introduction to web development</h2>
+				<h2 class="fragment"> Using Angular 2.0 ! </h2>
+			</section>
+			<section data-background-transition="zoom">
+				<h1> Hello All ! </h1>
+				<p class="fragment"> I am Billel Guerfa </p>
+				<p class="fragment">
+					You can find me on :
+				</p>
+				<ul class="fragment">
+					<li> Gmail : cb_guerfa@esi.dz</li>
+					<li> Facebook/G+ : Billel Guerfa</li>
+					<li> Twitter : @Billel_Guerfa</li>
+					<li> GitHub : github.com/BillelGuerfa</li>
+				</ul>
+				<p class="fragment"> But for now...let's get super powers :p </p>
+			</section>
+			<section>
+				<h2>What is web development ? </h2>
+				<section data-background="img/WebDev.jpg" data-background-transition="zoom"></section>
+				<section>
+					<h3> Past </h3>
+					<ul>
+						<li>Static web sites</li>
+						<li> Web of content...</li>
+					</ul>
+				</section>
+				<section>
+					<h3> Now </h3>
+					<p class="fragment"> Web 2.0 Changed everything...</p>
+					<ul>
+						<li class="fragment">FrontEnd / Backend </li>
+						<li class="fragment">Interactiveness</li>
+						<li class="fragment">Responsiveness</li>
+					</ul>
+				</section>
+				<section>
+					<h3> From now on.. </h3>
+					<ul>
+						<li class="fragment">Single page apps</li>
+						<li class="fragment">Progressive web apps</li>
+						<li class="fragment">Full stack web developement</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<h3> Mobile & Desktop ?</h3>
+				<section>
+					<h3> Mobile ..</h3>
+					<blockquote class="fragment" cite="">
+						&ldquo;Hybrid apps are slow.&rdquo;
+					</blockquote>
+				</section>
+				<section>
+					<img src="img/please.jpg">
+				</section>
+				<section>
+					<img src="img/ionic.jpg">
+				</section>
+				<section>
+					<img src="img/web_tech.jpg">
+				</section>
+				<section>
+					<img class="logo" src="img/ionic_logo.jpg">
+					<img class="logo" src="img/nativescript_logo.png">
+					<img class="logo" src="img/electron_logo.png">
+				</section>
+			</section>
+			<section>
+				<h3> What are you doing here ? </h3>
+			</section>
+			<section>
+				<section>
+					<h1> HTML/CSS </h1>
+					<section data-markdown>
+						<script type="text/template">
+								```
+								<section>
+									<h2> Introduction to web development</h2>
+									<h2 class="fragment"> Using Angular 2.0 ! </h2>
+									<p class="fragment">
+										<small>Created by <a href="https://www.linkedin.com/in/billelguerfa">Billel Guerfa</a> / cb_guerfa@esi.dz</small>
+									</p>
+								</section>
+								<section data-background-transition="zoom">
+									<h3> Hello All ! </h3>
+									<p class="fragment"> I am Billel Guerfa </p>
+									<p class="fragment"> Let's get super powers today :p </p>
+								</section>
+								```
+								```
+								.reveal .slides section .fragment {
+									opacity: 0;
+									visibility: hidden;
+									-webkit-transition: all .2s ease;
+											transition: all .2s ease; }
+									.reveal .slides section .fragment.visible {
+										opacity: 1;
+										visibility: visible; }
+
+								```
+							</script>
+					</section>
+				</section>
+				<section>
+					<ul>
+						<li>Declarative syntax</li>
+						<li>Define page structure as a tree, hierarchical structure</li>
+						<li>Colors, opacity, fonts...</li>
+					</ul>
+				</section>
+				<section>
+					<h1> The Browser </h1>
+					<p>The DOM (Document Object Model)</p>
+					<img src="img/dom.png">
+				</section>
+				<section>
+					<h1> Javascript</h1>
+					<ul>
+						<li>Most popular programming language</li>
+						<li>On the Browser: Manipulate the DOM, Business logic, client side applications.</li>
+						<li>On the Server: Manipulate file system, streams, serve and respond to requests, talks to DBMS,Web services,NoSql...
+						</li>
+					</ul>
+				</section>
+				<section>
+					<img class="schema" src="img/typescript.png">
+				</section>
+				<section>
+					<h3> Node ! </h3>
+					<img src="img/nodejs_img.jpg">
+				</section>
+				<section>
+					<img src="img/node.jpg">
+				</section>
+			</section>
+			<section>
+				<h3> New web standards </h3>
+				<ul>
+					<li>custom web components & shadow DOM</li>
+					<li>Service workers</li>
+					<li>Progressive web apps..</li>
+				</ul>
+				<p><small>Check : <a href="https://developers.google.com/web/fundamentals">https://developers.google.com/web/fundamentals</a></small></p>
+			</section>
+			<section>
+				<h1>Custom Elements</h1>
+				<section data-markdown>
+					<script type="text/template">
+								```
+								<mon-composant></mon-composant>
+								<friends>
+									<friend> Billel Guerfa</friend>
+									<friend> Eric Cartman</friend>
+									<friend> Bruce Wayne </friend>
+								</friends>
+								```
+								</script>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h3> Let's talk about jQuery</h3>
+					<ul>
+						<li class="fragment">It's a Library not a framework</li>
+						<li class="fragment">It's Evil..</li>
+					</ul>
+				</section>
+				<section>
+					<img src="img/jquery.jpg">
+				</section>
+			</section>
+			<section>
+				<h3> Libraries & Frameworks </h3>
+				<img class="logo" src="img/angular_logo.jpg">
+				<img class="logo" src="img/react_logo.png">
+				<img class="logo" src="img/meteor_logo.png">
+				<img class="logo" src="img/polymer_logo.png">
+			</section>
+			<section>
+				<section data-background="img/angular_bg.png">
+				</section>
+				<section>
+					<h3> Why Angular ? </h3>
+					<ul>
+						<li class="fragment">Awesome Team</li>
+						<li class="fragment">Great community</li>
+						<li class="fragment">It is a plateform : Mobile & Desktop...</li>
+						<li class="fragment">It's Architecture !</li>
+						
+					</ul>
+					<p class="fragment"> And, guys...</p>
+					<p class="fragment"> ...GOOGLE !</p>
+				</section>
+				<section>
+					<h3> Architecture </h3>
+					<img class="fragment" src="img/angular_arc.png">
+				</section>
+				<section>
+					<h3> Let's get started ! </h3>
+				</section>
+			</section>
+			<section>
+				<h3>What's next ?</h3>
+				<p class="fragment"> </p>
+			</section>
+		</div>
+	</div>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+	<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+</body>
+
+</html>
